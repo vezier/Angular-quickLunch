@@ -1,0 +1,24 @@
+ <div class="container col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Agregar pedido</h3>
+        <div class="card-body">
+          <form action="">
+            <div class="form-group">
+              <label for="">idpedido:</label>
+              <input [(ngModel)]="pedido.id_pedido" name="idpedido" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="">IdCliente</label>
+              <input [(ngModel)]="pedido.id_cliente" name="idcliente" type="text" class="form-control" >
+            </div>
+            <div class="form-group">
+              <label for="">Fecha</label>
+              <input [(ngModel)]="pedido.fecha" name="fecha" type="datetime-local" class="form-control" >
+            </div> 
+          <button (click)="Guardar()"class="btn btn-danger" >Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+      </div>

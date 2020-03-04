@@ -1,0 +1,34 @@
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Pedidos</h3>
+      <div class="card-body">
+        <table class="table table-hover">
+          <thead>
+          <tr class="text-center">
+            <th>idPedido</th>
+            <th>Id Cliente</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+          <tbody>
+          <tr *ngFor="let pedido of pedidos" class="text-center">
+            <td>{{pedido.id_pedido}}</td>
+            <td>{{pedido.id_cliente}}</td>
+            <td>{{pedido.fecha}}</td>
+            <td>
+            <button class="btn btn-warning"(click)="editarPedido(pedido)"> Modificar</button>
+            <button class="btn btn-danger" (click)="deletePedido(pedido)"> Borrar</button></td>
+          </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+
+    
+
+    </div>

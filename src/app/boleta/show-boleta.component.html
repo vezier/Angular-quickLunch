@@ -1,0 +1,38 @@
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h3>Boletas</h3>
+      <div class="card-body">
+        <table class="table table-hover">
+          <thead>
+          <tr class="text-center">
+            <th>id_boleta</th>
+            <th>Id pedido</th>
+            <th>Fecha</th>
+            <th>Monto Pagar</th>
+            <th>Metodod Pago</th>
+          </tr>
+        </thead>
+          <tbody>
+          <tr *ngFor="let boleta of boletas" class="text-center">
+            <td>{{boleta.id_boleta}}</td>
+            <td>{{boleta.pedido}}</td>
+            <td>{{boleta.fecha}}</td>
+            <td>{{boleta.total_pagar}}</td>
+            <td>{{boleta.forma_pago}}</td>
+            <td>
+            <button class="btn btn-warning"(click)="editarBoleta(boleta)"> Modificar</button>
+            <button class="btn btn-danger" (click)="deleteBoleta(boleta)"> Borrar</button></td>
+          </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+    </div>
+  </div>
+
+    
+
+    </div>
